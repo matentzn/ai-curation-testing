@@ -10,6 +10,12 @@ For example, the make command `make test` should be run like this:
 sh odk.sh make test
 ```
 
+robot should be run like this (COMMAND is the command you want to run):
+
+```
+sh odk.sh robot COMMAND
+```
+
 The odk.sh script essentially wraps the ODK docker container which has a lot of ontology tools installed.
 
 ## Make targets
