@@ -32,3 +32,4 @@ The odk.sh script essentially wraps the ODK docker container which has a lot of 
 ## Conventions
 
 - Use `sh odk.sh make <target>` from repo root
+- **NEVER** try to remove any files or clean up after running commands.
