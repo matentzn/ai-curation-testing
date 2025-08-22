@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ro.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ro.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ro.owl">
+        <dc:title>Relation Ontology (RO)</dc:title>
+        <dc:description>A test version of the Relations Ontology for AI curation testing</dc:description>
+        <owl:versionInfo>test-version</owl:versionInfo>
+    </owl:Ontology>
+    
+    <!-- Basic relation classes for testing -->
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:label>has participant</rdfs:label>
+        <rdfs:comment>A relation between a process and a continuant, in which the continuant is somehow involved in the process.</rdfs:comment>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <rdfs:label>participates in</rdfs:label>
+        <rdfs:comment>A relation between a continuant and a process, in which the continuant is somehow involved in the process.</rdfs:comment>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <rdfs:label>has role</rdfs:label>
+        <rdfs:comment>A relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence.</rdfs:comment>
+    </owl:ObjectProperty>
+
+</rdf:RDF>
