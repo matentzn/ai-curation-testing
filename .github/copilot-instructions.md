@@ -1,6 +1,8 @@
-# How to run tasks
+# ⚠️ CRITICAL: Read This First
 
-## ODK wrapper
+## MANDATORY ODK wrapper
+
+**NEVER run commands directly. ALL commands MUST use the ODK wrapper.**
 
 Most commands you run using ontology tools such as ROBOT, and all `make` commands must be executed through the odk.sh script.
 
