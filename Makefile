@@ -3,7 +3,7 @@
 
 TIMESTAMP := $(shell date +"%Y-%m-%d_%H-%M-%S")
 
-RO_URL="https://raw.githubusercontent.com/oborel/obo-relations/refs/heads/master/ro-base.owl"
+RO_URL="https://purl.obolibrary.org/obo/ro/ro-base.owl"
 RO_PURL_BASE="http://purl.obolibrary.org/obo/ro"
 
 .PHONY: .FORCE
